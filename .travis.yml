@@ -1,10 +1,9 @@
 addons:
   sonarcloud:
-    organization: "cnessonarreportupdatedscalian" # the key of the org you chose at step #3
-    token: "BBrjlOiULsAKxKGBpIfpy2j5sXfb6OctQfkM0qekzrNneqfSioxYx+TxK/CnbmAWGuhFfJwAppjD0QSNRKOou9iGfrosRu5wVM/3PQzTh1f3bdQPbs8VW/wwJRw0YZ45jA5WwGjbpp55ENcNGXXUulb2ZIx59jl8BTAJfrj/KybwUQcVDytIsk/UsJHVHknIk9hYQN2QGZEDpnXSdwcshy7PK5Ibu5by8oJ+kLI93nS2tilu6cqqy67w0vD54V4KDqhUdlv1Un4C2qgD2WdjgosiUhlHN2p/Y0EN5WQRQsqTQUcP8VasmFXLfpZeBRZH8wT8heSJOgTV3L2gTKGWWSDWV9TeqwMBr8EFZhwHybrv0VIyj3+kOC86eI0uedDNWrYkdJqmdAdFiwXu86CC4CzhwhgDdvwHo5A4Qa0VX3ss/TmE6UqdavGG2wNWHCPa7ahvwR7IY85pNQ8g+1/quk5WlnSEMkTgiTeoHyXVF6j5w9mOQi1D2eiXwogkhN4Ulz1xEaopZbGnm43zJm6iA4HW7WXpdEh8W1vSZUwZr3Xa3E46QxOfrfYpAdFeVU9Ici9S/yBde7GiaZ23v1I/4xRXyG8Sb9oed89uzUT7bm7+jdeh57FlWaB28EzIr8Jf0sIaBagWWV4EDaaYJoqMkRYfg2Tk+7dxxOOgOua5FlU=" # encrypted value of your token
+    organization: "cnessonarreportupdatedscalian"
+    token:
+      secure: "BBrjlOiULsAKxKGBpIfpy2j5sXfb6OctQfkM0qekzrNneqfSioxYx+TxK/CnbmAWGuhFfJwAppjD0QSNRKOou9iGfrosRu5wVM/3PQzTh1f3bdQPbs8VW/wwJRw0YZ45jA5WwGjbpp55ENcNGXXUulb2ZIx59jl8BTAJfrj/KybwUQcVDytIsk/UsJHVHknIk9hYQN2QGZEDpnXSdwcshy7PK5Ibu5by8oJ+kLI93nS2tilu6cqqy67w0vD54V4KDqhUdlv1Un4C2qgD2WdjgosiUhlHN2p/Y0EN5WQRQsqTQUcP8VasmFXLfpZeBRZH8wT8heSJOgTV3L2gTKGWWSDWV9TeqwMBr8EFZhwHybrv0VIyj3+kOC86eI0uedDNWrYkdJqmdAdFiwXu86CC4CzhwhgDdvwHo5A4Qa0VX3ss/TmE6UqdavGG2wNWHCPa7ahvwR7IY85pNQ8g+1/quk5WlnSEMkTgiTeoHyXVF6j5w9mOQi1D2eiXwogkhN4Ulz1xEaopZbGnm43zJm6iA4HW7WXpdEh8W1vSZUwZr3Xa3E46QxOfrfYpAdFeVU9Ici9S/yBde7GiaZ23v1I/4xRXyG8Sb9oed89uzUT7bm7+jdeh57FlWaB28EzIr8Jf0sIaBagWWV4EDaaYJoqMkRYfg2Tk+7dxxOOgOua5FlU=" # encrypted value of your token
+
 script:
-  
   # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
-  # - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package;
   - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=bowserax_TestSonarAnalysis
-  
