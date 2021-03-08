@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>fr.cnes.sonar</groupId>
-    <artifactId>cnesreport</artifactId>
+    <artifactId>testsonarcnesreport</artifactId>
     <version>5.6.2</version>
 
     <properties>
@@ -137,6 +137,7 @@
         </dependency>
     </dependencies>
 
+	<!--
     <build>
         <testSourceDirectory>src/test/ut/java</testSourceDirectory>
         <plugins>
@@ -154,7 +155,7 @@
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
-                    <finalName>cnesreport</finalName>
+                    <finalName>testsonarcnesreport</finalName>
                     <appendAssemblyId>false</appendAssemblyId>
                 </configuration>
                 <executions>
@@ -169,4 +170,5 @@
             </plugin>
         </plugins>
     </build>
+	-->
 </project>
